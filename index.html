@@ -4,27 +4,80 @@
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>수요일</title>
+
+	<!-- 타이포링크 -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+KR:wght@300;600;700&display=swap" rel="stylesheet">
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@300&display=swap" rel="stylesheet">
+	<!-- /타이포링크 -->
+
 	<style type="text/css">
 		body{margin: 0; background-color: black;}
 		section{width: 1000px; background-color: #f0f0f0; margin:  auto;}
 		.can{width: 700px; margin: auto;background-color: white;}
-		.text_a{margin-left: 25px; padding-bottom: 30px;}
-		.text_b{margin-left: 25px;}
-		.text_c{margin-left: 25px;}
+		.text_a{font-family: 'Noto Serif KR', serif;
+			margin-left: 30px; 
+			padding-bottom: 30px;
+			line-height: 1.7;}
+		.text_b{font-family: 'Noto Serif KR', serif;
+			margin-left: 30px;
+			line-height: 1.7;}
+		.text_c{font-family: 'Noto Serif KR', serif;
+			margin-left: 30px;
+			line-height: 1.7;}
 		h2{background-color: #f0f0f0; color: grey; margin-bottom: 25px; font-size: 100%; margin-top: 40px;}
 		img{display: block; margin-left: auto; margin-right: auto;}
 		h3{width: 600px; margin: auto; font-size: 100%; background-color: #d3d3d3;}
 		p{font-size: 10pt;}
-
+		a{display: inline-block;
+			font-family: 'Noto Sans KR', sans-serif;
+			background: white; 
+			font-size: 9pt;
+			color: black; 
+			width: 100px; height: 30px;
+			text-align: center;
+			line-height: 30px; 
+			text-decoration: none;
+			font-weight: bold;
+			box-shadow: 0px 0px 1px grey;
+			margin-left: 270px;
+			margin-top: 10px;
+			margin-bottom: 10px;}
+		a:hover{ background: #00ff00;
+			color: #0d6ebf;
+			transition: all 0.5s;}
+		nav ul{background-color: #black;
+			margin: auto;
+			font-family: 'Noto Sans KR', sans-serif;
+			width: 1000px;
+			color: white;}
+		nav ul li {display: inline-block; width: 70px; text-align: center;}
+		nav ul li a{color: white; background-color: black; font-size: 12px;}
+		footer{text-align: right; color: #8e8e8e}
 
 	</style>
 </head>
+
+<!-- <nav>
+	<ul>
+		<li><a href="#1">23:50</a></li>
+		<li><a href="#2">23:55</a></li>
+		<li><a href="#3">09:30</a></li>
+		<li><a href="#4">10:05</a></li>
+		<li><a href="#5">10:30</a></li>
+		<li><a href="#6">11:00</a></li>
+	</ul>
+</nav> -->
+
 <body>
 	<section>
 		<img src="head.png" width="1000px">
 		<br><br>
 		<h3>수요일 오전까지 제출해야하는 과제를 수요일 오전 10시에 시작하는 사람의 기록</h3>
-		<div class="can">
+		<div class="can" id="1">
 			<h2>2022.03.01. 23:50</h2>
 			<img src="image1.png" width="600px">
 			<div class="text_a">
@@ -35,7 +88,7 @@
 			</div>
 		</div>
 
-		<div class="can">
+		<div class="can" id="2">
 		<h2>2022.03.01. 23:55</h2>
 		<img src="image2.png" width="400px">
 			<div class="text_a">
@@ -49,7 +102,7 @@
 			</div>
 		</div>
 
-		<div class="can">
+		<div class="can" id="3">
 		<h2>2022.03.02. 09:30</h2>
 			<div class="text_b">
 			<p>3월 2일 오전 9시 30분, 상쾌하게 일어났다.
@@ -63,21 +116,24 @@
 			</div>
 		</div>
 
-		<div class="can">
+		<div class="can" id="4">
 		<h2>2022.03.02. 10:05</h2>
 		<img src="memojang.png" width="500px">
 		<p style="font-size: 80%; color: #7b7b7b; text-align: center;">메모장에 왜 저렇게 써져있는지는 알 수 없는 일이다.</p>
 			<div class="text_a">
 			<br><p>당연하게도 내 이야기를 미리 생각해둔 것이 딱히 없었다.
 			<br>애초에 과제를 다시 떠올린 것이 어젯밤이었기 때문에 아무 생각이 없었다.
-			<br>뭐하지 고민하던 찰나 다른 사람들은 어떻게 했는지 확인해봐야겠다는 생각이 들었다.
+			<br>뭐하지 고민하던 찰나 다른 사람들은 어떻게 했는지 확인해봐야겠다는 생각이 들었다.</p>
+			<a href="https://docs.google.com/spreadsheets/d/1ZCQefHmd2FXPNMTBL9pxTH9Kpv57vYQOajt9M78cJ7U/edit">2020년 수업</a>
+
 			<p>수업 스프레드 시트의 상단에는 작년과 재작년 수업의 기록이 링크가 걸려있다.
 			<br>바로 들어가서 확인했다.
 			</p>
 			</div>
+		
 		</div>
 
-		<div class="can">
+		<div class="can" id="5">
 		<h2>2022.03.02. 10:30</h2>
 		<img src="image5.png" width="450px">
 			<div class="text_a">
@@ -90,7 +146,7 @@
 			</div>
 		</div>
 
-		<div class="can">
+		<div class="can" id="6">
 		<h2>2022.03.02. 11:00</h2>
 		<img src="image6.png" width="550px">
 			<div class="text_c">
@@ -105,6 +161,13 @@
 		<p style="text-align: right; margin-right: 30px; padding-bottom: 15px; color:#7b7b7b"><b><i>파이팅!</b></i></p>
 		</div>
 		<br><br>
+
+		<footer>
+			<p style="line-height: 1.7;font-family: 'Noto Sans KR', sans-serif; font-size: 10px; margin-right: 150px;">
+			18100868 안수오
+			<br>웹인터페이스디자인</p>
+		</footer>
+
 		<img src="bottom.png" width="1000px">
 	</section>
 </body>
